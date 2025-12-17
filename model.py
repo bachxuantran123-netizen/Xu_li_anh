@@ -54,7 +54,7 @@ class PostureModel:
             data["angle"] = angle
 
             # Logic ngưỡng cảnh báo
-            # > 160: Tốt, < 140: Xấu (Em có thể tinh chỉnh số này)
+            # > 160: Tốt, < 140: Xấu 
             if angle > 160: 
                 data["stage"] = "GOOD"
                 data["is_bad_posture"] = False
