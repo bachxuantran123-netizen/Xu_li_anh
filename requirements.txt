@@ -1,4 +1,4 @@
-# Tai nhung thu vien can thiet de chay du an nhan dien khuon mat
+# Tai nhung thu vien can thiet de chay du an nhan dien dang ngoi
 opencv-python
 mediapipe
 numpy
