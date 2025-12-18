@@ -3,7 +3,7 @@ import cv2
 import threading
 import time
 import platform
-# Import class từ các file khác cùng thư mục
+
 from model import PostureModel
 from view import PostureView
 
@@ -19,7 +19,7 @@ class PostureController:
         
         # Cấu hình âm thanh
         self.last_alert_time = 0
-        self.alert_cooldown = 2.0 # Thời gian nghỉ giữa 2 lần kêu (giây)
+        self.alert_cooldown = 2.0
 
     def play_sound(self):
         """Hàm chạy trong luồng riêng."""
