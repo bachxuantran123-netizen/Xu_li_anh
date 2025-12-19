@@ -42,8 +42,7 @@ class PostureController:
             self.last_alert_time = current_time
 
     def run(self):
-        print("Đang khởi động Posture AI" \
-        "Nhấn 'q' để thoát.")
+        print("Đang khởi động Posture AI... Nhấn 'q' để thoát.")
         
         while self.cap.isOpened():
             ret, frame = self.cap.read()
@@ -54,7 +53,7 @@ class PostureController:
             # 1. Model xử lý toán học
             data, raw_results = self.model.process_frame(frame)
 
-            # 2. Controller kiểm tra logic nghiệp vụ (Cảnh báo âm thanh)
+            # 2. Controller kiểm tra logic nghiệp vụ
             if data["is_bad_posture"]:
                 self.trigger_alert()
 
